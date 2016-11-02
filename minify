@@ -1,0 +1,3 @@
+#!/bin/sh
+
+uglifyjs --preamble "//http://casual-effects.com" --reserved-file reserved.json --comments --beautify beautify=false,ascii-only=true --mangle --mangle-props --reserved 'window.include' --reserve-domprops --compress evaluate,conditionals,loops,join_vars,pure_getters,comparisons,unsafe,drop_console include.js > include.min.js
