@@ -1,6 +1,6 @@
 **include.js**
-<br/>Copyright 2016, Morgan McGuire [@CasualEffects](https://twitter.com/CasualEffects)
-<br/>http://casual-effects.com
+<br/>Copyright 2016, Morgan McGuire [@CasualEffects](https://twitter.com/CasualEffects), http://casual-effects.com
+<br/>MIT License
 
 Adds a client-side include statement for HTML. To use:
 
