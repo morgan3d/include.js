@@ -1,5 +1,5 @@
-`include.js`
-<br/>Copyright 2016, Morgan McGuire
+**include.js**
+<br/>Copyright 2016, Morgan McGuire [@CasualEffects](https://twitter.com/CasualEffects)
 <br/>http://casual-effects.com
 
 Adds a client-side include statement for HTML. To use:
