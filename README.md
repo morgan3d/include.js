@@ -1,10 +1,11 @@
-include.js
-Copyright 2016, Morgan McGuire
-http://casual-effects.com
+**include.js**
+<br/>Copyright 2016, Morgan McGuire [@CasualEffects](https://twitter.com/CasualEffects), http://casual-effects.com
+<br/>MIT License
 
 Adds a client-side include statement for HTML. To use:
- 1. Put <script src="include.js"></script> in both the parent and child documents
- 2. Use <include src="child.html"></include> wherever you want to include another document
+
+ 1. Put `<script src="include.min.js"></script>` in both the parent and child documents
+ 2. Use `<include src="child.html"></include>` wherever you want to include another document
 
 Features:
  - Works recursively
