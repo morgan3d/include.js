@@ -59,10 +59,11 @@ if (! window.include) {
         // Otherwise they will no longer be valid.
         var includeTags = [].slice.call(doc.getElementsByTagName('include'));
         
+        var numChildrenLeft = includeTags.length; // This will be used as a counter below
+
         var IAmAChild = myID; // !== null
-        var IAmAParent = includeTags.length;
+        var IAmAParent = numChildrenLeft;
         
-        var numChildrenLeft = IAmAParent; // This will count down below
         var childFrameStyle = 'display:none';
         
         if (IAmAParent) {
@@ -96,7 +97,7 @@ if (! window.include) {
                 var src = element.attributes['src'].nodeValue;
                 var childID = 'inc' + (++counter);
                 element.outerHTML = '<iframe src="' + src + '?id=' + childID + '&p=' + encodeURIComponent(myBase) + 
-                    '"id="' + childID + '"style="' + childFrameStyle + '"/>';
+                    '"id="' + childID + '"style="' + childFrameStyle + '"></iframe>';
             });
         } else if (IAmAChild) {
             sendContentsToMyParent();
